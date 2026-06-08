@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(91, 208, 255);
+}
+
+.general {
+    background-color: white;
+    box-shadow: 10px 10px 20px;
+    margin: 50px;
+    padding: 40px;
+}
+
+#skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 70px;
+    font-family: sans-serif;
+}
+
+.text {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.links {
+    border-radius: 4px;
+    background-color: rgba(214, 237, 255, 0.81);
+    padding: 40px;
+    font-size: 30px;
+}
+
+footer {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.FOOT {
+    display: flex;
+    flex-direction: column;
+}
+
+.footPart {
+    font-size: 20px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footTitle {
+    font-size: 30px;
+    font-family: sans-serif;
+}
