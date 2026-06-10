@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Felix Mercado</title>
     <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
     <header class="general">
@@ -23,7 +24,7 @@
         <hr>
             <section id="About">
                 <h1 class="text">About me</h1>
-                <p class="text" style="font-size: 20px;">I am a NYC student focused in full-stack coding with skills in python, CSS, Javascript, bash using tools such as visual studio code, github, microsft teams and microsoft office tools, also, I speak english and spanish</p>
+                <p class="text" style="font-size: 20px;">I am a NYC high school software developer student focused in full-stack coding with skills in python, CSS, Javascript, bash and using tools such as visual studio code, github, microsft teams and microsoft office tools, also, I speak english and spanish</p>
                 <p class="text" style="font-size: 20px;">I can make teamwork, communicate ideas clearly and pay attention to small details</p>
             </section>
         <hr>
@@ -71,6 +72,10 @@
                     </div>
                 </div>
             </section>
+
+            <section id="future">
+                <h3>My future goals are to go to college, I did not have bugs making this page and I think that I would include a little more of interactions to this project using javascript</h3>
+            </section>
   
     </main>
 
@@ -79,7 +84,7 @@
         <div id="contact" class="FOOT">
             <h3 class="footTitle">Contact</h3>
                 <a href="//www.linkedin.com/in/felix-mercado-967640414/" class="footPart">linkedin</a>
-                <a href="felixm8307@nycstudents.net" class="footPart">felixm8307@nycstudents.net</h6>
+                <button id="copy" class="footPart">felixm8307@nycstudents.net</button>
                 <a href="https://github.com/FELIX-MERCADO" class="footPart">Github</a>
         </div>
 
@@ -87,8 +92,37 @@
             <h3 class="footTitle">Sections</h3>
                 <a href="#About" class="footPart">About me</a>
                 <a href="#projects" class="footPart">Projects</a>
-                <a href="#reflection" class="footPart">Reflection</a>
+                <a href="#future" class="footPart">Future goals</a>
+        </div>
+
+        <div id="footerLink" class="FOOT">
+            <h3 class="footTitle">Source code</h3>
+                <a href="https://github.com/FELIX-MERCADO/Main-Page" class="footPart">Main Page Project Github</a>
+                <a href="https://github.com/FELIX-MERCADO/Weather-UI-project-programing-1" class="footPart">Weather page Project Github</a>
+                <a href="https://github.com/FELIX-MERCADO/Sat-Project" class="footPart">Sat page Project Github</a>
+                <a href="https://github.com/FELIX-MERCADO/Page-Code-project" class="footPart">Page code Project Github</a>
+                <a href="https://github.com/FELIX-MERCADO/Python-projects/" class="footPart">Some python projects Github</a>
         </div>
     </footer>
-</body>
+</body>    
+
+<script defer>
+
+        let mail = document.getElementById("copy");
+
+        mail.addEventListener("click", async () => {
+            await navigator.clipboard.writeText("felixm8307@nycstudents.net")
+            mail.innerHTML = "<button class='footPart'>Email copied!</button>";
+            mail.style.backgroundColor = "#27BBF5";
+            mail.style.borderRadius = "4px";
+            mail.style.padding = "10px";
+            setTimeout(() => {
+                mail.innerHTML = "<button class='footPart'>felixm8307@nycstudents.net</button>";
+                mail.style.background = "none";
+                mail.style.borderRadius = "0px";
+                mail.style.padding = "0px";
+            }, 3000)
+        });
+
+    </script>
 </html>

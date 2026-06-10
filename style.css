@@ -64,6 +64,15 @@ footer {
     color: white;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform: scale(1);
+    transition-duration: 0.6s;
+    background: none;
+    border: none;
+}
+
+.footPart:hover {
+    transform: scale(1.2);
+    transition-duration: 0.6s;
 }
 
 a {
@@ -101,4 +110,9 @@ a {
     margin: 40px;
     height: 5px;
     background-color: red;
+}
+
+#future {
+    font-size: 15px;
+    font-family: sans-serif;
 }
