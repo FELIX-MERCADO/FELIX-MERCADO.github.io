@@ -9,6 +9,12 @@ body {
     padding: 40px;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #skills {
     display: flex;
     flex-direction: row;
@@ -24,7 +30,6 @@ body {
 }
 
 .text {
-    font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -35,13 +40,9 @@ header {
 }
 
 .links {
-    border-radius: 4px;
-    background-color: black;
-    padding: 20px;
     font-size: 20px;
     color: white;
     font-family: monospace;
-    border-radius: 10px;
 }
 
 footer {
@@ -81,14 +82,23 @@ a {
 }
 
 .ProjectGroup {
-    display: flex;
-    flex-direction: row;
-    padding: 40px;
+    display: grid;
+    grid-template-columns: 200px 3px auto;
+    grid-template-areas: "a b c";
     gap: 30px;
     font-size: 0px;
+    border-radius: 4px;
+    background-color: rgb(71, 71, 71);
+    padding: 20px;
 }
 
 .projectstext {
     font-family: monospace;
     color: black;
+}
+
+.separation {
+    margin: 40px;
+    height: 5px;
+    background-color: red;
 }
